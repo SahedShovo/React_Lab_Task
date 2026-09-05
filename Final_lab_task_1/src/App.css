@@ -1,0 +1,139 @@
+:root {
+  --primary: rgb(224, 224, 228);
+  --background: #e51b1b;
+  --white: rgb(187, 27, 27);
+  --text: #1a1818;
+  --gray: rgb(40, 36, 36);
+
+  --space: 50px;
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Header */
+
+.dashboard-header {
+  background: var(--white);
+  padding: var(--space);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.dashboard-header p {
+  color: var(--gray);
+}
+
+.dashboard-header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Dashboard */
+
+.dashboard {
+  padding: var(--space);
+}
+
+/* Overview */
+
+.overview {
+  background: var(--white);
+  padding: var(--space);
+  margin-bottom: var(--space);
+  border-radius: var(--radius);
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+}
+
+/* Stat Badge */
+
+.stat-badge {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.stat-badge p {
+  margin: 0;
+  color: var(--gray);
+}
+
+.stat-badge strong {
+  font-size: 20px;
+}
+
+/* Student Cards */
+
+.student-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+}
+
+.student-card {
+  background: var(--white);
+  padding: var(--space);
+  border-radius: var(--radius);
+}
+
+.student-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.student-header h2 {
+  margin: 0;
+}
+
+.student-header p {
+  color: var(--gray);
+}
+
+/* Course Tags */
+
+.course-list {
+  display: flex;
+  gap: 10px;
+}
+
+.course-tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    display: block;
+  }
+
+  .dashboard-header nav {
+    margin-top: 15px;
+  }
+}
