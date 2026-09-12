@@ -1,0 +1,134 @@
+.app {
+  width: min(100% - 2rem, 64rem);
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: #1f2937;
+}
+
+.dashboard-header {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 0.35rem;
+  color: inherit;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #dbeafe;
+}
+
+.dashboard-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.dashboard-header nav span {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #1d4ed8;
+  font-size: 0.875rem;
+}
+
+.app > input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+}
+
+.app > input:focus {
+  border-color: #2563eb;
+  outline: 3px solid #bfdbfe;
+}
+
+.app > div:not(.student-list) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #2563eb;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #1d4ed8;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #eff6ff;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.student-card {
+  padding: 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgb(15 23 42 / 0.08);
+}
+
+.student-card h3 {
+  margin: 0 0 0.75rem;
+  color: #111827;
+  font-size: 1.2rem;
+}
+
+.stat-badge {
+  margin: 0.35rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.student-card > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.course-tag {
+  padding: 0.25rem 0.55rem;
+  border-radius: 0.375rem;
+  background: #dbeafe !important;
+  color: #1e40af;
+  font-size: 0.8rem;
+}
+
+.loading {
+  padding: 2rem 0;
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .app {
+    width: min(100% - 1.5rem, 40rem);
+    padding: 1rem 0;
+  }
+}
