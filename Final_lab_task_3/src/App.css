@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #4f46e5;
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --spacing-sm: 8px;
+  --font-size-md: 16px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+}
+
+.loading {
+  font-style: italic;
+}
